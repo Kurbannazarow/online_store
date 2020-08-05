@@ -1,0 +1,116 @@
+// main: ../style.less
+.schema {
+	font-size: 25px;
+	color: rgb(8, 59, 21);
+	font-family: inherit;
+	font-weight: bold;
+	line-height: 1.5;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.info__block-inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.img1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 130px;
+	height: 130px;
+	padding: 5px;
+	border: 2px dotted red;
+	border-radius: 50%;
+
+	.img1__inner {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 120px;
+		height: 115px;
+		background: #2196f3;
+		border-radius: 50%;
+	}
+}
+
+.img__svg {
+	width: 60px;
+	height: 60px;
+}
+
+.img0 {
+	font-weight: 700;
+	margin-top: 10px;
+	color: #3f8bdb;
+	font-size: 14px;
+}
+
+.img2 {
+	margin-top: 13px;
+	margin-bottom: 20px;
+	width: 35px;
+
+	img {}
+}
+
+.info__block {
+	.my-mixin-collection.mixin-card;
+
+	padding: 30px 20px;
+	height: 300px;
+	width: 255px;
+	max-width: 255px;
+	min-width: 255px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	position: relative;
+	margin-bottom: 20px;
+	margin-top: 30px;
+
+	img {
+		width: 255px;
+	}
+
+	@media @mobile {
+		margin: 25px auto;
+	}
+
+}
+
+.info__block-title {
+	font-size: 17px;
+	color: #666666;
+	font-weight: 500;
+	line-height: 1.5;
+	margin-bottom: 40px;
+}
+
+.info__block-subtitle {
+	font-size: 14px;
+	color: #d1d1d1;
+	font-weight: 500;
+	line-height: 2;
+}
+
+.info__block-subtitle a {
+	text-decoration: none;
+	border: 1px solid @blue-light;
+	border-radius: 15px;
+	padding: 10px 20px;
+	margin: 83px 0;
+	font-size: 20px;
+	color: @blue-light;
+
+	&:hover {
+		border: 1px solid blue;
+		color: blue;
+	}
+}

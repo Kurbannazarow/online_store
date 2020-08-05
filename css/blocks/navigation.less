@@ -1,0 +1,53 @@
+// main: ../style.less
+.navigation {
+    background: rgb(238, 206, 206);
+    .my-mixin-collection.mixin-card;
+}
+
+.navigation__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.navigation__item {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    color: #808080;
+    border-bottom: 2px solid #f5f5f5;
+    cursor: pointer;
+
+    transition: color .2s linear, background .2s linear;
+
+    &:hover {
+        color: @blue-light;
+        background: rgb(243, 239, 239);
+    }
+}
+
+.navigation__item-icon {
+    width: 50px;
+    flex-shrink: 0;
+    margin-right: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 30px;
+
+    }
+}
+
+.navigation__item-title {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.navigation__item-arrow {
+    margin-left: auto;
+    margin-right: 10px;
+}

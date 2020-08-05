@@ -1,0 +1,29 @@
+// main: ../style.less
+
+.promo__section {
+    margin-bottom: 30px;
+}
+
+.promo__section-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media @mobile {
+        justify-content: center;
+    }
+}
+
+.promo__section-col {
+    max-width: 350px;
+    width: 350px;
+
+    @media @mobile {
+        margin-bottom: 30px;
+    }
+
+    @media @mobile_xs {
+        max-width: 100%;
+    }
+
+}

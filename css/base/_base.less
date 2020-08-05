@@ -1,0 +1,49 @@
+// main: ../style.less
+
+
+body {
+    background: #fafafa;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1;
+    font-size: inherit;
+}
+
+.container {
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.pointer-e {
+    pointer-events: none !important;
+    color: #c7c1c1 !important;
+    background: #ebe5e5 !important;
+    border-color: #eae6e6 !important;
+}
+
+a {
+    text-decoration: none;
+    transition: color .2s linear;
+
+    &:hover {
+        text-decoration: none;
+        color: @blue-light;
+    }
+}

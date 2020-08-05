@@ -1,0 +1,53 @@
+// main: ../style.less
+
+.main-content {}
+
+.main__row {
+    display: flex;
+}
+
+.main__row.about-main {
+    @media @mobile {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+.main__column-left {
+    width: 255px;
+    flex-shrink: 0;
+    margin-right: 30px;
+
+
+    @media @mobile {
+        width: 100%;
+        text-align: center;
+        margin-top: 107px;
+    }
+}
+
+.main__column-left.a-left {
+    @media @mobile {
+        margin-top: 0;
+    }
+}
+
+
+.main__column-left.product-left {
+    @media @mobile {
+        display: none;
+    }
+}
+
+.main__column-right {
+    @media @mobile {
+        margin-top: 130px;
+    }
+}
+
+.main__column-right.man {
+    @media @mobile {
+        display: none;
+    }
+}
